@@ -1,5 +1,7 @@
 package questionC;
 
+import questionC.*;
+
 import java.time.LocalDate;
 import java.util.Arrays;
 
@@ -13,12 +15,13 @@ public class Main {
                         new Order(14, LocalDate.now(), 1))
                 );
 
+
         Paycheck paycheck = hourly.calcCompensation(5, 2021);
         Paycheck paycheck1 = salaried.calcCompensation(5, 2021);
         Paycheck paycheck2 = commissioned.calcCompensation(5, 2021);
 
-        System.out.println("questionC.Hourly employee net pay: " + paycheck.getNetPay());
-        System.out.println("questionC.Salaried employee net pay: " + paycheck1.getNetPay());
-        System.out.println("questionC.Commissioned employee net pay: " + paycheck2.getNetPay());
+        System.out.println("Hourly employee net pay: " + paycheck.getNetPay());
+        System.out.println("Salaried employee net pay: " + paycheck1.getNetPay());
+        System.out.println("Commissioned employee net pay: " + paycheck2.getNetPay());
     }
 }

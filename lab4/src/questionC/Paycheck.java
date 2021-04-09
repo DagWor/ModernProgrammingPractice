@@ -21,7 +21,7 @@ public class Paycheck {
         System.out.println("here is a print");
     }
 
-    double getNetPay(){
+    public double getNetPay(){
         double net = 0.0;
         net += grossPay * fica;
         net += grossPay * state;

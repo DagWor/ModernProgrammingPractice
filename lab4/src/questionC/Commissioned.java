@@ -2,7 +2,7 @@ package questionC;
 
 import java.util.List;
 
-public class Commissioned extends Employee{
+public class Commissioned extends Employee {
     private double commission;
     private double baseSalary;
     private List<Order> orders;
@@ -39,7 +39,7 @@ public class Commissioned extends Employee{
     }
 
     @Override
-    double calcGrossPay(int month, int year) {
+    public double calcGrossPay(int month, int year) {
         double total = 0.0;
         for (Order order : orders){
             total += order.getOrderAmount();

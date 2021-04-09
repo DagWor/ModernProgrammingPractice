@@ -1,6 +1,8 @@
 package questionC;
 
-public class Salaried extends Employee{
+import questionC.Employee;
+
+public class Salaried extends Employee {
     private double salary;
 
     public Salaried(String empId, double salary) {
@@ -17,7 +19,7 @@ public class Salaried extends Employee{
     }
 
     @Override
-    double calcGrossPay(int month, int year) {
+    public double calcGrossPay(int month, int year) {
         return salary;
     }
 }

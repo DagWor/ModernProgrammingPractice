@@ -1,7 +1,7 @@
 package questionC;
 
 public abstract class Employee {
-    private String empId;
+    private final String empId;
 
     public Employee(String empId){
         this.empId = empId;
@@ -10,11 +10,11 @@ public abstract class Employee {
         System.out.println(this.empId);
     }
 
-    Paycheck calcCompensation(int month, int year){
+    public Paycheck calcCompensation(int month, int year){
         double totalGross = calcGrossPay(month, year);
         return new Paycheck(totalGross);
     }
 
-    abstract double calcGrossPay(int month, int year);
+    public abstract double calcGrossPay(int month, int year);
 
 }

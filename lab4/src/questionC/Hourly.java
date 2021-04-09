@@ -1,6 +1,8 @@
 package questionC;
 
-public class Hourly extends Employee{
+import questionC.Employee;
+
+public class Hourly extends Employee {
     private double hourlyWage;
     private double hoursPerWeek;
 
@@ -27,7 +29,7 @@ public class Hourly extends Employee{
     }
 
     @Override
-    double calcGrossPay(int month, int year) {
+    public double calcGrossPay(int month, int year) {
         return 4 * hourlyWage * hoursPerWeek;
     }
 }
