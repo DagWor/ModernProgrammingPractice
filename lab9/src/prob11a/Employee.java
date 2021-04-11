@@ -1,7 +1,5 @@
 package prob11a;
 
-
-
 public class Employee {
 	String firstName, lastName;
 	int salary;

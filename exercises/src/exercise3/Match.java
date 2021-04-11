@@ -1,31 +1,23 @@
 package exercise3;
 
+import java.util.*;
 public class Match {
-    private Team home;
-    private Team away;
+    private List<Team> teams;
     private Team winner;
     private Stats stats;
 
-    public Match(Team home, Team away, Team winner) {
-        this.home = home;
-        this.away = away;
+    public Match(List<Team> teams, Team winner, Stats stats) {
+        this.teams = teams;
         this.winner = winner;
+        this.stats = stats;
     }
 
-    public Team getHome() {
-        return home;
+    public List<Team> getTeams() {
+        return teams;
     }
 
-    public void setHome(Team home) {
-        this.home = home;
-    }
-
-    public Team getAway() {
-        return away;
-    }
-
-    public void setAway(Team away) {
-        this.away = away;
+    public void setTeams(List<Team> teams) {
+        this.teams = teams;
     }
 
     public Team getWinner() {
